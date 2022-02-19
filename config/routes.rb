@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   
+  resources :users, only: [:show, :edit]
   root to: "homes#top"
   devise_for :users
    

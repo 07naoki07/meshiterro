@@ -1,4 +1,4 @@
-
+<body>
 <% @post_images.each do |post_image| %>
 <div>
   <%= link_to post_image_path(post_image.id) do %>
@@ -11,3 +11,4 @@
   <p>ユーザーネーム：<%= post_image.user.name %></p>
 </div>
 <% end %>
+</body>
